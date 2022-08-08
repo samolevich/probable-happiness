@@ -1,11 +1,13 @@
 import { FC } from 'react'
 import { DatePicker } from 'antd';
+import ErrorBoundry from '../error/ErrorBoundry';
 
 const App: FC = () => {
   return (
-    <div>App
+    <ErrorBoundry>
+      App
       <DatePicker />
-    </div>
+    </ErrorBoundry>
   )
 }
 
